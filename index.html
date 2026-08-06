@@ -253,23 +253,23 @@
     </div>
 </section>
 
-<section id="menu" class="py-8 md:py-14 mb-10 px-8 md:px-8 max-w-7xl mx-auto bg-white/50 rounded-3xl my-8 border border-neutral-100">
+<section id="menu" class="py-6 md:py-14 mb-10 px-3 sm:px-6 md:px-8 max-w-7xl mx-auto bg-white/50 rounded-3xl my-8 border border-neutral-100 overflow-hidden">
     <!-- Main Header -->
-    <div class="text-center mb-10">
+    <div class="text-center mb-6 md:mb-10">
         <span class="bg-neutral-100 text-neutral-600 text-xs px-3 py-1 rounded-full font-medium">Full Selection</span>
-        <h2 class="text-3xl md:text-4xl font-black mt-2">OUR BAKERY MENU</h2>
-        <p class="text-neutral-500 text-sm mt-1">Explore our wide selection of freshly baked items</p>
+        <h2 class="text-2xl md:text-4xl font-black mt-2">OUR BAKERY MENU</h2>
+        <p class="text-neutral-500 text-xs md:text-sm mt-1">Explore our wide selection of freshly baked items</p>
     </div>
 
     <!-- Filter Bar (Categories & Price Dropdown) -->
-    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 border-b border-neutral-200 pb-6">
-        <div class="flex gap-2 overflow-x-auto no-scrollbar w-full sm:w-auto pb-2 sm:pb-0">
-            <button onclick="filterCategory('all')" id="cat-all" class="px-5 py-2 bg-amber-600 text-white rounded-full font-medium text-sm whitespace-nowrap shadow-sm transition transform hover:scale-105">All Items</button>
-            <button onclick="filterCategory('breads')" id="cat-breads" class="px-5 py-2 bg-white text-neutral-700 hover:bg-neutral-100 rounded-full font-medium text-sm whitespace-nowrap border border-neutral-200 transition transform hover:scale-105">Breads</button>
-            <button onclick="filterCategory('pastries')" id="cat-pastries" class="px-5 py-2 bg-white text-neutral-700 hover:bg-neutral-100 rounded-full font-medium text-sm whitespace-nowrap border border-neutral-200 transition transform hover:scale-105">Pastries</button>
-            <button onclick="filterCategory('sweets')" id="cat-sweets" class="px-5 py-2 bg-white text-neutral-700 hover:bg-neutral-100 rounded-full font-medium text-sm whitespace-nowrap border border-neutral-200 transition transform hover:scale-105">Sweets & Cakes</button>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6 md:mb-8 border-b border-neutral-200 pb-4 md:pb-6">
+        <div class="flex gap-2 overflow-x-auto no-scrollbar w-full sm:w-auto pb-2 sm:pb-0 px-1">
+            <button onclick="filterCategory('all')" id="cat-all" class="px-4 py-2 bg-amber-600 text-white rounded-full font-medium text-xs sm:text-sm whitespace-nowrap shadow-sm transition transform hover:scale-105">All Items</button>
+            <button onclick="filterCategory('breads')" id="cat-breads" class="px-4 py-2 bg-white text-neutral-700 hover:bg-neutral-100 rounded-full font-medium text-xs sm:text-sm whitespace-nowrap border border-neutral-200 transition transform hover:scale-105">Breads</button>
+            <button onclick="filterCategory('pastries')" id="cat-pastries" class="px-4 py-2 bg-white text-neutral-700 hover:bg-neutral-100 rounded-full font-medium text-xs sm:text-sm whitespace-nowrap border border-neutral-200 transition transform hover:scale-105">Pastries</button>
+            <button onclick="filterCategory('sweets')" id="cat-sweets" class="px-4 py-2 bg-white text-neutral-700 hover:bg-neutral-100 rounded-full font-medium text-xs sm:text-sm whitespace-nowrap border border-neutral-200 transition transform hover:scale-105">Sweets & Cakes</button>
         </div>
-        <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+        <div class="flex items-center gap-2 w-full sm:w-auto justify-end px-1">
             <span class="text-xs text-black font-medium">Filter Price:</span>
             <select id="price-filter" onchange="filterByPrice()" class="px-3 py-2 bg-white border border-neutral-200 rounded-xl text-xs font-medium text-neutral-700 outline-none cursor-pointer shadow-sm">
                 <option value="all">All Prices</option>
@@ -281,128 +281,127 @@
     </div>
 
     <!-- Slider Section with Left/Right Buttons -->
-    <div class="relative px-6 group">
+    <div class="relative px-2 sm:px-6 group">
         <!-- Scroll Left Button -->
-        <button onclick="scrollSlider('left')" class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-amber-600 hover:text-white text-neutral-500 shadow-md border border-neutral-200 w-10 h-10 rounded-full flex items-center justify-center transition-all focus:outline-none hover:scale-110">
-            <i class="fa-solid fa-chevron-left text-sm"></i>
+        <button onclick="scrollSlider('left')" class="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-amber-600 hover:text-white text-neutral-500 shadow-md border border-neutral-200 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all focus:outline-none hover:scale-110">
+            <i class="fa-solid fa-chevron-left text-xs sm:text-sm"></i>
         </button>
 
         <!-- Scroll Right Button -->
-        <button onclick="scrollSlider('right')" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-amber-600 hover:text-white text-neutral-500 shadow-md border border-neutral-200 w-10 h-10 rounded-full flex items-center justify-center transition-all focus:outline-none hover:scale-110">
-            <i class="fa-solid fa-chevron-right text-sm"></i>
+        <button onclick="scrollSlider('right')" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-amber-600 hover:text-white text-neutral-500 shadow-md border border-neutral-200 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center transition-all focus:outline-none hover:scale-110">
+            <i class="fa-solid fa-chevron-right text-xs sm:text-sm"></i>
         </button>
 
         <!-- Slider Container -->
-        <div id="itemSlider" class="flex gap-4 overflow-x-auto no-scrollbar scroll-smooth py-3 cursor-grab active:cursor-grabbing select-none">
+        <div id="itemSlider" class="flex gap-3 sm:gap-4 overflow-x-auto no-scrollbar scroll-smooth py-3 cursor-grab active:cursor-grabbing select-none">
             
             <!-- Item 1 -->
-            <div class="menu-item w-[210px] sm:min-w-[240px] bg-white rounded-2xl p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="pastries" data-price="2.50">
+            <div class="menu-item w-[45%] sm:w-[210px] sm:min-w-[240px] bg-white rounded-2xl p-2.5 sm:p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="pastries" data-price="2.50">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300" alt="Croissant" class="w-full h-32 object-cover rounded-xl mb-3 pointer-events-none">
-                    <h3 class="font-bold text-neutral-800 text-sm truncate">Butter Croissant</h3>
-                    <p class="text-xs text-neutral-500 mb-2">Pastries</p>
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300" alt="Croissant" class="w-full h-24 sm:h-32 object-cover rounded-xl mb-2 sm:mb-3 pointer-events-none">
+                    <h3 class="font-bold text-neutral-800 text-xs sm:text-sm truncate">Butter Croissant</h3>
+                    <p class="text-[10px] sm:text-xs text-neutral-500 mb-2">Pastries</p>
                 </div>
                 <div class="flex justify-between items-center mt-auto">
-                    <span class="text-amber-600 font-bold text-sm">$2.50</span>
-                    <button onclick="addToCart('Butter Croissant', 2.50, 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300')" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
+                    <span class="text-amber-600 font-bold text-xs sm:text-sm">$2.50</span>
+                    <button onclick="addToCart('Butter Croissant', 2.50, 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300')" class="px-2.5 sm:px-3 py-1 bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] sm:text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
                 </div>
             </div>
 
             <!-- Item 2 -->
-            <div class="menu-item w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="sweets" data-price="4.00">
+            <div class="menu-item w-[45%] sm:w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-2.5 sm:p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="sweets" data-price="4.00">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=300" alt="Chocolate Cake" class="w-full h-32 object-cover rounded-xl mb-3 pointer-events-none">
-                    <h3 class="font-bold text-neutral-800 text-sm truncate">Chocolate Lava Cake</h3>
-                    <p class="text-xs text-neutral-500 mb-2">Sweets & Cakes</p>
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=300" alt="Chocolate Cake" class="w-full h-24 sm:h-32 object-cover rounded-xl mb-2 sm:mb-3 pointer-events-none">
+                    <h3 class="font-bold text-neutral-800 text-xs sm:text-sm truncate">Chocolate Lava Cake</h3>
+                    <p class="text-[10px] sm:text-xs text-neutral-500 mb-2">Sweets & Cakes</p>
                 </div>
                 <div class="flex justify-between items-center mt-auto">
-                    <span class="text-amber-600 font-bold text-sm">$4.00</span>
-                    <button onclick="addToCart('Chocolate Lava Cake', 4.00, 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=300')" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
+                    <span class="text-amber-600 font-bold text-xs sm:text-sm">$4.00</span>
+                    <button onclick="addToCart('Chocolate Lava Cake', 4.00, 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=300')" class="px-2.5 sm:px-3 py-1 bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] sm:text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
                 </div>
             </div>
 
             <!-- Item 3 -->
-            <div class="menu-item w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="breads" data-price="3.50">
+            <div class="menu-item w-[45%] sm:w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-2.5 sm:p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="breads" data-price="3.50">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=300" alt="Sourdough Bread" class="w-full h-32 object-cover rounded-xl mb-3 pointer-events-none">
-                    <h3 class="font-bold text-neutral-800 text-sm truncate">Artisan Sourdough</h3>
-                    <p class="text-xs text-neutral-500 mb-2">Breads</p>
+                    <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=300" alt="Sourdough Bread" class="w-full h-24 sm:h-32 object-cover rounded-xl mb-2 sm:mb-3 pointer-events-none">
+                    <h3 class="font-bold text-neutral-800 text-xs sm:text-sm truncate">Artisan Sourdough</h3>
+                    <p class="text-[10px] sm:text-xs text-neutral-500 mb-2">Breads</p>
                 </div>
                 <div class="flex justify-between items-center mt-auto">
-                    <span class="text-amber-600 font-bold text-sm">$3.50</span>
-                    <button onclick="addToCart('Artisan Sourdough', 3.50, 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=300')" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
+                    <span class="text-amber-600 font-bold text-xs sm:text-sm">$3.50</span>
+                    <button onclick="addToCart('Artisan Sourdough', 3.50, 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=300')" class="px-2.5 sm:px-3 py-1 bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] sm:text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
                 </div>
             </div>
 
             <!-- Item 4 -->
-            <div class="menu-item w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="sweets" data-price="3.80">
+            <div class="menu-item w-[45%] sm:w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-2.5 sm:p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="sweets" data-price="3.80">
                 <div>
-                    <img src="https://jovialfoods.com/cdn/shop/articles/747074453778.jpg?v=1780415855" alt="Strawberry Tart" class="w-full h-32 object-cover rounded-xl mb-3 pointer-events-none">
-                    <h3 class="font-bold text-neutral-800 text-sm truncate">Strawberry Fruit Tart</h3>
-                    <p class="text-xs text-neutral-500 mb-2">Sweets & Cakes</p>
+                    <img src="https://jovialfoods.com/cdn/shop/articles/747074453778.jpg?v=1780415855" alt="Strawberry Tart" class="w-full h-24 sm:h-32 object-cover rounded-xl mb-2 sm:mb-3 pointer-events-none">
+                    <h3 class="font-bold text-neutral-800 text-xs sm:text-sm truncate">Strawberry Fruit Tart</h3>
+                    <p class="text-[10px] sm:text-xs text-neutral-500 mb-2">Sweets & Cakes</p>
                 </div>
                 <div class="flex justify-between items-center mt-auto">
-                    <span class="text-amber-600 font-bold text-sm">$3.80</span>
-                    <button onclick="addToCart('Strawberry Fruit Tart', 3.80, 'https://images.unsplash.com/photo-1621236378699-8597feb4c19d?w=300')" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
+                    <span class="text-amber-600 font-bold text-xs sm:text-sm">$3.80</span>
+                    <button onclick="addToCart('Strawberry Fruit Tart', 3.80, 'https://images.unsplash.com/photo-1621236378699-8597feb4c19d?w=300')" class="px-2.5 sm:px-3 py-1 bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] sm:text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
                 </div>
             </div>
 
             <!-- Item 5 -->
-            <div class="menu-item w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="pastries" data-price="2.20">
+            <div class="menu-item w-[45%] sm:w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-2.5 sm:p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="pastries" data-price="2.20">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=300" alt="Blueberry Muffin" class="w-full h-32 object-cover rounded-xl mb-3 pointer-events-none">
-                    <h3 class="font-bold text-neutral-800 text-sm truncate">Blueberry Muffin</h3>
-                    <p class="text-xs text-neutral-500 mb-2">Pastries</p>
+                    <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=300" alt="Blueberry Muffin" class="w-full h-24 sm:h-32 object-cover rounded-xl mb-2 sm:mb-3 pointer-events-none">
+                    <h3 class="font-bold text-neutral-800 text-xs sm:text-sm truncate">Blueberry Muffin</h3>
+                    <p class="text-[10px] sm:text-xs text-neutral-500 mb-2">Pastries</p>
                 </div>
                 <div class="flex justify-between items-center mt-auto">
-                    <span class="text-amber-600 font-bold text-sm">$2.20</span>
-                    <button onclick="addToCart('Blueberry Muffin', 2.20, 'https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=300')" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
+                    <span class="text-amber-600 font-bold text-xs sm:text-sm">$2.20</span>
+                    <button onclick="addToCart('Blueberry Muffin', 2.20, 'https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=300')" class="px-2.5 sm:px-3 py-1 bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] sm:text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
                 </div>
             </div>
 
             <!-- Item 6 -->
-            <div class="menu-item w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="breads" data-price="1.80">
+            <div class="menu-item w-[45%] sm:w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-2.5 sm:p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="breads" data-price="1.80">
                 <div>
-                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2025/03/GFO11Feb25-0960525Quichetoast-a033e7d.jpg?quality=90&resize=708,643" alt="Baguette" class="w-full h-32 object-cover rounded-xl mb-3 pointer-events-none">
-                    <h3 class="font-bold text-neutral-800 text-sm truncate">French Baguette</h3>
-                    <p class="text-xs text-neutral-500 mb-2">Breads</p>
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2025/03/GFO11Feb25-0960525Quichetoast-a033e7d.jpg?quality=90&resize=708,643" alt="Baguette" class="w-full h-24 sm:h-32 object-cover rounded-xl mb-2 sm:mb-3 pointer-events-none">
+                    <h3 class="font-bold text-neutral-800 text-xs sm:text-sm truncate">French Baguette</h3>
+                    <p class="text-[10px] sm:text-xs text-neutral-500 mb-2">Breads</p>
                 </div>
                 <div class="flex justify-between items-center mt-auto">
-                    <span class="text-amber-600 font-bold text-sm">$1.80</span>
-                    <button onclick="addToCart('French Baguette', 1.80, 'https://images.unsplash.com/photo-1549590143-d54d8f0d372a?w=300')" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
+                    <span class="text-amber-600 font-bold text-xs sm:text-sm">$1.80</span>
+                    <button onclick="addToCart('French Baguette', 1.80, 'https://images.unsplash.com/photo-1549590143-d54d8f0d372a?w=300')" class="px-2.5 sm:px-3 py-1 bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] sm:text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
                 </div>
             </div>
 
             <!-- Item 7 -->
-            <div class="menu-item w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="sweets" data-price="2.80">
+            <div class="menu-item w-[45%] sm:w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-2.5 sm:p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="sweets" data-price="2.80">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300" alt="Brownie" class="w-full h-32 object-cover rounded-xl mb-3 pointer-events-none">
-                    <h3 class="font-bold text-neutral-800 text-sm truncate">Fudge Brownie</h3>
-                    <p class="text-xs text-neutral-500 mb-2">Sweets & Cakes</p>
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300" alt="Brownie" class="w-full h-24 sm:h-32 object-cover rounded-xl mb-2 sm:mb-3 pointer-events-none">
+                    <h3 class="font-bold text-neutral-800 text-xs sm:text-sm truncate">Fudge Brownie</h3>
+                    <p class="text-[10px] sm:text-xs text-neutral-500 mb-2">Sweets & Cakes</p>
                 </div>
                 <div class="flex justify-between items-center mt-auto">
-                    <span class="text-amber-600 font-bold text-sm">$2.80</span>
-                    <button onclick="addToCart('Fudge Brownie', 2.80, 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300')" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
+                    <span class="text-amber-600 font-bold text-xs sm:text-sm">$2.80</span>
+                    <button onclick="addToCart('Fudge Brownie', 2.80, 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300')" class="px-2.5 sm:px-3 py-1 bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] sm:text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
                 </div>
             </div>
 
             <!-- Item 8 -->
-            <div class="menu-item w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="pastries" data-price="3.00">
+            <div class="menu-item w-[45%] sm:w-[210px] sm:min-w-[230px] bg-white rounded-2xl p-2.5 sm:p-3 shadow-sm border border-pink-100 flex-shrink-0 transition-all duration-300 hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between" data-category="pastries" data-price="3.00">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300" alt="Cinnamon Roll" class="w-full h-32 object-cover rounded-xl mb-3 pointer-events-none">
-                    <h3 class="font-bold text-neutral-800 text-sm truncate">Cinnamon Roll</h3>
-                    <p class="text-xs text-neutral-500 mb-2">Pastries</p>
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300" alt="Cinnamon Roll" class="w-full h-24 sm:h-32 object-cover rounded-xl mb-2 sm:mb-3 pointer-events-none">
+                    <h3 class="font-bold text-neutral-800 text-xs sm:text-sm truncate">Cinnamon Roll</h3>
+                    <p class="text-[10px] sm:text-xs text-neutral-500 mb-2">Pastries</p>
                 </div>
                 <div class="flex justify-between items-center mt-auto">
-                    <span class="text-amber-600 font-bold text-sm">$3.00</span>
-                    <button onclick="addToCart('Cinnamon Roll', 3.00, 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300')" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
+                    <span class="text-amber-600 font-bold text-xs sm:text-sm">$3.00</span>
+                    <button onclick="addToCart('Cinnamon Roll', 3.00, 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=300')" class="px-2.5 sm:px-3 py-1 bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] sm:text-xs rounded-lg transition hover:scale-105 shadow-sm">ADD</button>
                 </div>
             </div>
 
         </div> 
     </div>
 </section>
-
     <section id="locations" class="py-10 md:py-14 px-6 md:px-8 max-w-7xl mx-auto bg-white/60 rounded-3xl my-6 border border-neutral-100">
         <div class="text-center mb-8">
             <span class="bg-neutral-100 text-neutral-600 text-xs px-3 py-1 rounded-full font-medium">Visit Us</span>
